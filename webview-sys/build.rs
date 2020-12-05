@@ -42,6 +42,7 @@ fn main() {
             .atleast_version("2.8")
             .probe("webkit2gtk-4.0")
             .unwrap();
+        return;
     } else if target.contains("apple") {
         build
             .file("webview_cocoa.c")
